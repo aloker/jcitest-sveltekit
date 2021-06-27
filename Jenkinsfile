@@ -6,10 +6,6 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'du -h'
-        sh 'pwd'
-        sh 'printenv'
-
         dir('packages/myapp') {
           sh "npm install -g pnpm"
           sh 'pnpm i'
