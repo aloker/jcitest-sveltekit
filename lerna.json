@@ -1,6 +1,10 @@
 {
   "packages": ["packages/*"],
   "version": "independent",
+  "changelogPreset": {
+    "name": "conventionalcommits",
+    "issueUrlFormat": "https://projects.validdata.de/issues/{{id}}"
+  },
   "command": {
     "version": {
       "conventionalCommits": true,
