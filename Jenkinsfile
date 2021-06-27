@@ -11,8 +11,9 @@ pipeline {
         sh 'printenv'
 
         dir('packages/myapp') {
-          sh 'npm install'
-          sh 'npm run build'
+          sh "npm install -g pnpm"
+          sh 'pnpm i'
+          sh 'pnpm build'
         }
       }
     }
