@@ -12,7 +12,7 @@ pipeline {
 
         dir('packages/myapp') {
           sh 'npm install'
-          sh 'npm build'
+          sh 'npm run build'
         }
       }
     }
