@@ -1,0 +1,15 @@
+{
+  "name": "svelte-kit",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/aloker/jcitest-sveltekit.git",
+  "author": "Andre Loker <a.loker@validdata.de>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "release": ""
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
