@@ -16,7 +16,7 @@ pipeline {
           sh 'pnpm build'
         }
 
-        archiveArtifacts 'packages/myapp/build'
+        archiveArtifacts 'packages/myapp/build/**/*'
       }
     }
 
