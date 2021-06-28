@@ -1,19 +1,24 @@
 pipeline {
-  agent {
-    docker { image 'node:14-alpine' }
-  }
-
+  agent none
   stages {
-    stage('Test') {
+    stage('Build') {
+      agent {
+        docker {
+          image 'node:14-alpine'
+        }
+
+      }
       steps {
         sh 'du -h'
-
-        dir('packages/myapp') {
-          sh "npm install -g pnpm"
+        dir(path: 'packages/myapp') {
+          sh 'npm install -g pnpm'
           sh 'pnpm i'
           sh 'pnpm build'
         }
+
+        archiveArtifacts 'packages/myapp/build'
       }
     }
+
   }
 }
