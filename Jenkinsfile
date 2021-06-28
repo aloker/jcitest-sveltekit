@@ -6,6 +6,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
+        sh 'du -h'
+
         dir('packages/myapp') {
           sh "npm install -g pnpm"
           sh 'pnpm i'
