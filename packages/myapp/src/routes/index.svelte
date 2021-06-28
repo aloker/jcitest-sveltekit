@@ -4,6 +4,8 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter/index.svelte';
+
+	const x: number = '123';
 </script>
 
 <svelte:head>
