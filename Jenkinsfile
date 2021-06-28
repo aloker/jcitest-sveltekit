@@ -13,6 +13,7 @@ pipeline {
         dir(path: 'packages/myapp') {
           sh 'npm install -g pnpm'
           sh 'pnpm i'
+          sh 'pnpm check'
           sh 'pnpm build'
         }
 
