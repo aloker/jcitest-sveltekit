@@ -5,7 +5,7 @@
 <script lang="ts">
 	import Counter from '$lib/Counter/index.svelte';
 
-	const x: number = '123';
+	const x: number = 123;
 </script>
 
 <svelte:head>
@@ -18,6 +18,7 @@
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
+	{x}
 	<Counter />
 </section>
 
