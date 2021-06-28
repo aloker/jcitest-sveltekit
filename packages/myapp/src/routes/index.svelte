@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-	<h1>The Magic Counter</h1>
+	<h1>Welcome to this site</h1>
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
